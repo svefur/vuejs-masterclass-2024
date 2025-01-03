@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import DataTable from '@/components/ui/data-table/DataTable.vue'
 import { supabase } from '@/lib/supabaseClient'
 import type { ColumnDef } from '@tanstack/vue-table'
-import { h, ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import type { Tables } from '../../../database/types'
 
 const projects = ref<Tables<'projects'>[] | null>(null)
 ;(async () => {
